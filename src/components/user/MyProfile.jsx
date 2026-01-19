@@ -6,7 +6,7 @@ const MyProfail = () => {
     name: 'Muhammad Zuhaib',
     email: 'zuhaib@gamil.com',
     phone: "000000000000",
-    image: '/profile_pic.png',
+    image: '/zuhaib.jpeg',
     address: 'City Lahore Punjab Pakistan',
     gender: "Male",
     dob: '2003-11-05'
