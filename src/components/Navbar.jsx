@@ -8,7 +8,6 @@ const Navbar = () => {
     let [login, setLogin]=useState(true);
     let [showMenu,setShowMenu]=useState(false)
 
-
   return (
     <div className='flex items-center justify-between py-4 mb-5 mx-5 text-sm border-b border-b-gray-400 tracking-wide'>
       <Link to='/'>
@@ -41,7 +40,7 @@ const Navbar = () => {
             login
             ? <div className='flex items-center gap-2 cursor-pointer group relative:'>
                 <img className='w-8 rounded-full' src="/zuhaib.jpeg" alt=""  />
-                <img className='w-2.5' src="/dropdown_icon.svg" alt="" />
+                <img className='w-2.5' src="/dropdown_icon.svg" alt=""  />
                 <div   className={`   absolute hidden top-0 right-20  pt-14  text-base font-medium text-gray-600 z-20 group-hover:block  `}>
                     <div className='bg-stone-100 rounded flex flex-col gap-4 p-4 min-w-48 '>
 
@@ -59,7 +58,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            :<button onClick={()=>navigate('/login')} className='bg-[#5f6FFF] px-8 py-3 rounded-full text-white hidden md:block font-light'>
+            :<button onClick={()=>navigate('/login')} className='bg-[#5f6FFF] px-8 py-3 rounded-full text-white flex  text-gray-600 bg-white p-2 rounded-full w-fit mt-2 hover:px-3 transition-all duration-200 md:block font-light'>
         Create Account
       </button>
         }

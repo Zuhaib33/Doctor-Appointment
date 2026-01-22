@@ -35,7 +35,8 @@ const Footer = () => {
         </div>
         <div className='text-gray-300'>
                 <hr />
-                <p className='text-center py-5 text-black'>Copyright 2026 @ Greatstack.dev - All Right Reserved.</p>
+                <p className='text-center py-5 text-gray-600 '>Visit my profile on Linkedin <a href="https://www.linkedin.com/in/muhammad-zuhaib-zulfiqar-39114336a/">
+                <span  className=' text-blue-800 underline cursor-pointer'>Click me</span></a> </p>
             </div>
         </>
     )
