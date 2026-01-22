@@ -23,7 +23,7 @@ const MyProfail = () => {
               <input className='bg-blue-100 px-2 rounded-lg ' type="url" value={userdata.image} onChange={(e) => setuserdata((prev) => ({ ...prev, image: e.target.value }))} />
 
             </div> </>
-          : <img className=' mb-5 mt-10' src={userdata.image} alt="" />
+          : <img className=' mb-5 mt-10 h-60' src={userdata.image} alt="" />
       }
 
 
