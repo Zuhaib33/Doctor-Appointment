@@ -58,7 +58,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            :<button onClick={()=>navigate('/login')} className='bg-[#5f6FFF] md:px-8 md:py-3 px-2 py-2 mt-2 rounded-full text-white flex '>
+            :<button onClick={()=>navigate('/login')} className='bg-[#5f6FFF] md:px-8 md:py-3 hidden mt-2 rounded-full text-white  '>
         Create Account
       </button>
         }
@@ -74,6 +74,12 @@ const Navbar = () => {
              <NavLink  onClick={()=>setShowMenu(false)} to="/doctor"><p className='px-4 py-2  '>All Doctors</p></NavLink>
               <NavLink  onClick={()=>setShowMenu(false)} to="/about"><p className='px-4 py-2  '>About</p></NavLink>
                <NavLink  onClick={()=>setShowMenu(false)} to="/contact"><p className='px-4 py-2  '>Contact</p></NavLink>
+               {
+                login 
+                ?null
+                : <NavLink  onClick={()=>setShowMenu(false)} to="/login"><p className='px-4 py-2  '>Create Account</p></NavLink>
+
+               }
           </ul>
         </div>
         
